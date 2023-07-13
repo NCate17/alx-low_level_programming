@@ -1,3 +1,2 @@
 #!/bin/bash
-CFILE="main.c" && BASENAME="${CFILE%.*}" && gcc -c "$CFILE" -o "$BASENAME.o" && echo "Compilation completed. Object file saved as $BASENAME.o"
-
+CFILE="your_c_file.c" && cpp -P "$CFILE" -o "c"
